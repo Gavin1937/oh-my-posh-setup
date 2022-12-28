@@ -21,9 +21,18 @@ run following uninstall scripts for your dedicated os
 
 ## Fonts
 
-Fonts I'm using are CascadiaCode v2.2.2 (69MB).
+The font I'm using is CascadiaCode v2.2.2 from Nerd Fonts.
 
-You can download it from [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/CascadiaCode.zip)
+* Website: [https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.com/font-downloads)
+* Filename: `CascadiaCode.zip`
+* Version: `v2.2.2`
+* GitHub Release: [tag v2.2.2](https://github.com/ryanoasis/nerd-fonts/releases/tag/v2.2.2)
+* Archive Url: [https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/CascadiaCode.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/CascadiaCode.zip)
+* Size: `71392503`
+* MD5: `CBC78B2BC9C7F1BCE1523BFFA1052192`
+* SHA-256: `B4F4F20AB6BBF55DD9AE7DD1FADD4EF2C608F38922C401AFCCE373B36A9B0407`
 
-Or, this script will automatically download it.
+You can download and install it by yourself.
+
+Or, this script will do it automatically.
 
