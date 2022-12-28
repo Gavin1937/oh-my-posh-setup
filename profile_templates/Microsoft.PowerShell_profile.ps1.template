@@ -1,0 +1,20 @@
+
+# ============================================ oh-my-posh ============================================ #
+# oh-my-posh Powershell profile template
+# replace #REPO_PATH# with absolute path to this repository
+
+# posh-git
+function Set-PoshGitStatus {
+    $global:GitStatus = Get-GitStatus
+    $env:POSH_GIT_STRING = Write-GitStatus -Status $global:GitStatus
+}
+New-Alias -Name 'Set-PoshContext' -Value 'Set-PoshGitStatus' -Scope Global -Force
+Import-Module -Name posh-git
+
+# Terminal-Icons
+Import-Module -Name Terminal-Icons
+
+# oh-my-posh theme
+oh-my-posh --init --shell pwsh --config _REPO_PATH_\custom_themes\myparadox_win.omp.json | Invoke-Expression
+
+# ============================================ oh-my-posh ============================================ #
