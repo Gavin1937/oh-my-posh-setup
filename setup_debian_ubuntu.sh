@@ -2,7 +2,7 @@
 
 # Auto install & setup oh-my-posh, and posh-git
 # for Debian/Ubuntu with my custom theme
-# This script will use wget and unzip
+# This script will use wget, unzip, and fontconfig
 # to download & install required programs
 
 
