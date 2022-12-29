@@ -1,23 +1,28 @@
 
 # setup oh-my-posh with my custom theme
 
-## Setup
 
-run following setup scripts for your dedicated os
+## Windows
 
-| os            | shell             | script                 |
-|---------------|-------------------|------------------------|
-| Windows       | PowerShell latest | setup_win.ps1          |
-| Debian/Ubuntu | bash              | setup_debian_ubuntu.sh |
+ * Requirements
+   * PowerShell >= 5
+   * winget
+ * Setup Script: `setup_win.ps1`
+ * Uninstall Script: `uninstall_win.ps1`
 
-## Uninstall
+## Debian/Ubuntu
 
-run following uninstall scripts for your dedicated os
+ * Requirements
+   * bash
+   * wget
+   * unzip
+   * fontconfig
+ * Setup Script: `setup_debian_ubuntu.sh`
+ * Uninstall Script: `uninstall_debian_ubuntu.sh`
 
-| os            | shell             | script                     |
-|---------------|-------------------|----------------------------|
-| Windows       | PowerShell latest | uninstall_win.ps1          |
-| Debian/Ubuntu | bash              | uninstall_debian_ubuntu.sh |
+## oh-my-posh
+
+* Version: `>= 12.22.0`
 
 ## Fonts
 
@@ -34,5 +39,5 @@ The font I'm using is CascadiaCode v2.2.2 from Nerd Fonts.
 
 You can download and install it by yourself.
 
-Or, this script will do it automatically.
+Or, this script can do it automatically.
 

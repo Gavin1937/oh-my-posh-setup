@@ -1,7 +1,6 @@
 
 # ============================================ oh-my-posh ============================================ #
 # oh-my-posh bashrc template
-# replace #REPO_PATH# with absolute path to this repository
 
 # posh-git
 source /usr/local/bin/git-prompt.sh

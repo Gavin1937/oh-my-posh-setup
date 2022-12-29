@@ -6,7 +6,7 @@
 # to download & install required programs
 
 
-# Install Oh my Posh
+# install oh-my-posh
 sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
 sudo chmod +x /usr/local/bin/oh-my-posh
 
@@ -18,7 +18,7 @@ sudo wget https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.s
 sudo chmod +x /usr/local/bin/git-prompt.sh
 sudo source /usr/local/bin/git-prompt.sh
 
-# ask to install fronts
+# ask to install fonts
 echo -n "Do you want to install all fonts automatically? (y/N): "
 read option
 option=$(echo -n $option | sed -e 's/\(.*\)/\L\1/' | sed -e 's/ *$//g')
@@ -29,11 +29,10 @@ then
     unzip ./font/CascadiaCode_v2.2.2.zip -d ~/.fonts/CascadiaCode
     fc-cache -fv
     rm -rf ./font
+    echo -e "Remember to change your terminal font to \"CaskaydiaCove NF Mono\"."
 fi
 
-# setup bashrc
-
-# ask to update profile with template profile
+# ask to update bashrc profile with template profile
 echo -n "Do you want to automatically update your bashrc? (y/N): "
 read option
 option=$(echo -n $option | sed -e 's/\(.*\)/\L\1/' | sed -e 's/ *$//g')
@@ -49,7 +48,7 @@ then
     echo -ne "\n\nAre you sure? (y/N): "
     read sure
     sure=$(echo -n $sure | sed -e 's/\(.*\)/\L\1/' | sed -e 's/ *$//g')
-    if [[ "$option" == "y" ]]
+    if [[ "$sure" == "y" ]]
     then
         echo "$TEMP_SRC" >> ~/.bashrc
         source ~/.bashrc

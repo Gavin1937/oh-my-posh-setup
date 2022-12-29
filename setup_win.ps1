@@ -49,6 +49,7 @@ if ($option -eq "y") {
             New-ItemProperty -Name $RegName -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts" -PropertyType string -Value $FontFile.name -Force | out-null
             Copy-item $FontFile.FullName -Destination $SystemFontsPath
             "Done"
+            Write-Output "Remember to change your terminal font to `"CaskaydiaCove NF Mono`"."
         }
     }
     

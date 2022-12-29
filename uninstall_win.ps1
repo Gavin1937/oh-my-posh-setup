@@ -23,6 +23,7 @@ if ($option -eq "y") {
     $sure = (Read-Host -Prompt "`n`nAre you sure? (y/N)").ToLower().Trim()
     if ($sure -eq "y") {
         $raw.Replace($block, "") > $filepath
+        Write-Output "Remember to change your terminal font setting."
     }
 }
 

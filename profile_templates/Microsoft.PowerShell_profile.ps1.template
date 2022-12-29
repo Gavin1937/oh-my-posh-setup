@@ -1,7 +1,6 @@
 
 # ============================================ oh-my-posh ============================================ #
 # oh-my-posh Powershell profile template
-# replace #REPO_PATH# with absolute path to this repository
 
 # posh-git
 function Set-PoshGitStatus {

@@ -11,6 +11,7 @@ if [[ "$option" == "y" ]]
 then
     rm -rf ~/.fonts/CascadiaCode
     fc-cache -fv
+    echo "Remember to change your terminal font setting."
 fi
 
 # clear posh-git
@@ -30,7 +31,7 @@ then
     echo -ne "\n\nAre you sure? (y/N): "
     read sure
     sure=$(echo -n $sure | sed -e 's/\(.*\)/\L\1/' | sed -e 's/ *$//g')
-    if [[ "$option" == "y" ]]
+    if [[ "$sure" == "y" ]]
     then
         sed '/# ============================================ oh-my-posh ============================================ #/,/# ============================================ oh-my-posh ============================================ #/d' $BASHRC_PATH > $TMP_PATH
         mv $TMP_PATH $BASHRC_PATH
