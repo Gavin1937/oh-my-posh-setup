@@ -1,6 +1,7 @@
 
 # setup oh-my-posh with my custom theme
 
+## You MUST clone/download this repository first, and then run following setup script from inside the repository directory.
 
 ## Windows
 
