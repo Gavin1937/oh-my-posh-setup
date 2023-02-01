@@ -16,4 +16,10 @@ Import-Module -Name Terminal-Icons
 # oh-my-posh theme
 oh-my-posh --init --shell pwsh --config _REPO_PATH_\custom_themes\myparadox_win.omp.json | Invoke-Expression
 
+# disable python venv prompt and allow oh-my-posh to handle it
+$env:VIRTUAL_ENV_DISABLE_PROMPT = 1
+
+# enable Emacs shortcuts in powershell
+Set-PSReadLineOption -EditMode Emacs
+
 # ============================================ oh-my-posh ============================================ #
